@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Сайт Доктора Тома с представленной информацией о ней"
+    />
+    <link rel="preconnect" href="https://yastatic.net" crossorigin />
+    <title>Питомник</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script async src="https://mc.yandex.ru/metrika/tag.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__logo logo hidden-mobile">
+            <img
+              src="assets/logo.svg"
+              alt="Doctor Toma"
+              class="logo__image"
+              width="254"
+              height="54"
+            />
+          </a>
+          <a href="#" class="header__logo logo visible-mobile">
+            <img
+              src="./assets/logo-mobile.svg"
+              alt="Doctor Toma"
+              class="logo__image"
+              width="43"
+              height="34"
+              loading="lazy"
+            />
+          </a>
+        </li>
+        <li class="header__item hidden-desktop">
+          <div class="header__info">
+            <div class="header__caption caption">
+              <p>Работаем круглосуточно</p>
+            </div>
+            <a
+              href="https://yandex.ru/maps/?text=Подольск, ул. Чайковского, 48А"
+              class="header__link text-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Подольск, ул.Чайковского, 48А</a
+            >
+          </div>
+        </li>
+        <li class="header__item visible-desktop">
+          <div class="header__info">
+            <a href="tel:+74956783222" class="header__link text-2"
+              >+7 495 678 32 22</a
+            >
+            <div class="header__caption caption">
+              <p>
+                Круглосуточно в
+                <a
+                  href="https://yandex.ru/maps/?text=Подольск, ул. Чайковского, 48А"
+                  class="header__link caption"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Подольске</a
+                >
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="header__item hidden-desktop">
+          <a href="tel:+795667964366" class="header__link text-2"
+            >+7 (956) 6796 43 66</a
+          >
+        </li>
+        <li class="header__item">
+          <button
+            class="button__burger-menu burger-button"
+            type="button"
+            aria-label="burger-button"
+            onclick="overlay.showModal()"
+          >
+            <span class="visually-hidden">Open navigation menu</span>
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <main class="content">
+      <section class="banner">
+        <img
+          class="banner__image"
+          src="./assets/dog-banner.webp"
+          alt=""
+          width="1200"
+          height="993"
+        />
+        <ul class="banner__list">
+          <li class="banner__item">
+            <h1>
+              Доктор Тома - ветеринарная клиника
+              <span class="italic">безусловной любви</span>
+            </h1>
+          </li>
+          <li class="banner__item">
+            <p class="banner__description">
+              Полный спектр услуг: от диагностики и лечения, до медицинского
+              сопровождения питомцев разного вида и возраста
+            </p>
+          </li>
+          <li class="banner__item">
+            <button
+              class="button banner__button"
+              onclick="window.location.href='#form'"
+            >
+              <img
+                src="./assets/icons/paws 1.svg"
+                alt="paw-icon"
+                width="25"
+                height="25"
+              />
+              <p>Записаться на прием</p>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="stocks">
+        <div class="stocks__block">
+          <div class="stocks__slider">
+            <button class="stocks__button button--decoration" type="button">
+              Акции декабря
+            </button>
+            <div class="stocks__slider-block">
+              <button
+                class="button--slider stocks__slider-right button-no-active"
+                aria-label="button-slider"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 8H1M1 8L8 1M1 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="button--slider stocks__slider-left"
+                aria-label="button-slider"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="stocks__list">
+            <li class="stocks__item">
+              <article class="stocks__card">
+                <img
+                  src="./assets/stocks images/events images big dog.webp"
+                  alt=""
+                  width="380"
+                  height="394"
+                  loading="lazy"
+                />
+                <p>
+                  -15% <br />
+                  на первый прием
+                </p>
+              </article>
+            </li>
+            <li class="stocks__item">
+              <article class="stocks__card">
+                <img
+                  src="./assets/stocks images/events images small dog.webp"
+                  alt=""
+                  width="380"
+                  height="394"
+                  loading="lazy"
+                />
+                <p>
+                  Скидка волонтерам на услуги клиники 15% на бездомных животных
+                </p>
+              </article>
+            </li>
+            <li class="stocks__item">
+              <article class="stocks__card hidden-mobile">
+                <img
+                  src="./assets/stocks images/events images cat.webp"
+                  alt=""
+                  width="380"
+                  height="394"
+                  loading="lazy"
+                />
+                <p>Каждую пятницу стерилизация кошки от 2250₽, вместо 3500₽</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <header class="about__header section-header">
+          <button class="about__header--button button--decoration">
+            О клинике
+          </button>
+          <div class="about__header--description">
+            <h2>
+              Страсть к профессии<br />
+              <span class="italic">и забота о животных -</span><br />
+              основные принципы<br />
+              нашей работы
+            </h2>
+            <p class="header__text text hidden-mobile">
+              Наша клиника открылась в 2023 году.<br />
+              Специалисты клиники уделяют особое<br />
+              внимание профилактике хронических<br />
+              заболеваний и вакцинации
+            </p>
+          </div>
+        </header>
+        <div class="about__block">
+          <ul class="about__list">
+            <li class="about__list--item grid-container-1 small-card">
+              <img
+                src="./assets/about clinic/icons/vet 1.svg"
+                alt="desk icon"
+                class="about__list--icon small-card--icon"
+                width="78"
+                height="78"
+                loading="lazy"
+              />
+              <h3>Современное оборудование</h3>
+              <p class="text">
+                Проводим диагностику и лечение пациентов на самом современном
+                оборудовании
+              </p>
+              <img
+                src="assets/about clinic/images/1card.webp"
+                alt="background image"
+                class="about__list--background-image small-card--background-image"
+                loading="lazy"
+              />
+            </li>
+            <li class="about__list--item big-card grid-container-2">
+              <header class="about__item--header big-card--header">
+                <h3>Хирургия 24/7</h3>
+                <button class="about__item--header--button button--decoration">
+                  Только о нас
+                </button>
+              </header>
+              <div class="about__item--body big-card--body">
+                <p class="text">
+                  Выполняем плановые, срочные и экстренные операции любой
+                  сложности круглосуточно
+                </p>
+                <img
+                  src="assets/about clinic/images/2card.webp"
+                  alt="background image"
+                  class="about__list--background-image big-card--background-image"
+                  width="770"
+                  height="450"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+            <li class="about__list--item grid-container-3 small-card">
+              <img
+                src="./assets/about clinic/icons/veterinarian 3.svg"
+                alt="desk icon"
+                class="about__list--icon small-card--icon"
+                width="78"
+                height="78"
+                loading="lazy"
+              />
+              <h3>Экстренная помощь</h3>
+              <p class="text">
+                Оперативно принимаем, оперируем и лечим экстренного больного вне
+                очереди
+              </p>
+              <img
+                src="./assets/about clinic/images/3card.webp"
+                alt="background image"
+                class="about__list--background-image small-card--background-image"
+                loading="lazy"
+              />
+            </li>
+            <li
+              class="about__list--item grid-container-4 small-card small-card--orange"
+            >
+              <h3>
+                Биохимический анализ крови<br />
+                <span class="italic">за 15 минут!</span>
+              </h3>
+              <p class="text">
+                Результаты анализов в кратчайшие сроки. Количество показателей
+                можно выбрать
+              </p>
+            </li>
+            <li class="about__list--item grid-container-5 small-card">
+              <img
+                src="assets/about clinic/icons/vet 5.svg"
+                alt="desk icon"
+                class="about__list--icon small-card--icon"
+                width="78"
+                height="78"
+                loading="lazy"
+              />
+              <h3>Собственная база доноров</h3>
+              <p class="text">
+                Всегда в наличии цельная кровь, эритроцитарная масса,
+                плазма крови кошек и собак
+              </p>
+              <img
+                src="assets/about clinic/images/5сard.webp"
+                alt="background image"
+                class="about__list--background-image small-card--background-image"
+                width="450"
+                height="380"
+                loading="lazy"
+              />
+            </li>
+            <li class="about__list--item big-card grid-container-6">
+              <header class="about__item--header big-card--header">
+                <h3>Постановка катетера в яремную вену</h3>
+                <button class="about__item--header--button button--decoration">
+                  Только о нас
+                </button>
+              </header>
+              <div class="about__item--body big-card--body">
+                <p class="text">
+                  Поставим катетер в яремную вену вашему питомцу с максимальной
+                  осторожностью
+                </p>
+                <img
+                  src="./assets/about clinic/images/6card.webp"
+                  alt="background image"
+                  class="about__list--background-image big-card--background-image"
+                  width="770"
+                  height="450"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+            <li
+              class="about__list--item grid-container-7 small-card small-card--green"
+            >
+              <img
+                src="assets/about clinic/icons/vet 7.svg"
+                alt="desk icon"
+                class="about__list--icon small-card--icon"
+                width="78"
+                height="78"
+                loading="lazy"
+              />
+              <h3>Современное оборудование</h3>
+              <p class="text">
+                Проводим диагностику и лечение пациентов на самом современном
+                оборудовании
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form">
+        <img
+          src="./assets/form-image.webp"
+          alt="background-image "
+          class="form__background-image hidden-mobile"
+          loading="lazy"
+        />
+        <img
+          src="./assets/form-image-mobile.webp"
+          alt="background-image "
+          class="form__background-image visible-mobile"
+          loading="lazy"
+        />
+        <div class="form__block">
+          <div class="form__block--description">
+            <h2>Вызов врача на дом</h2>
+            <p>
+              Вашему питомцу требуется неотложная помощь? Приедем в течение 40
+              минут!
+            </p>
+          </div>
+          <form action="" method="post" class="form__block--form">
+            <label>
+              <input
+                class="form__block--input"
+                type="text"
+                placeholder="Ваше Имя"
+            /></label>
+            <label>
+              <input
+                class="form__block--input"
+                type="tel"
+                placeholder="Телефон"
+            /></label>
+            <button class="button button--send" type="submit">Отправить</button>
+            <div class="form__list--caption">
+              <p class="caption form__block--caption">
+                *Нажимая на кнопку, вы соглашаетесь с
+              </p>
+              <a href="#" class="caption form__block--caption">
+                политикой конфиденциальности.</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <header class="services__header section-header">
+          <button class="about__header--button button--decoration">
+            Услуги
+          </button>
+          <div class="about__header--description">
+            <h2>
+              Мы предоставляем<br />
+              <span class="italic">срочную качественную</span><br />
+              медицинскую помощь <br />
+              вашим питомцам
+            </h2>
+          </div>
+        </header>
+        <div class="services__slider">
+          <button
+            class="button--slider services__button button-no-active"
+            aria-label="button-slider"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8H1M1 8L8 1M1 8L8 15"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="button--slider services__button"
+            aria-label="button-slider"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 8H15M15 8L8 1M15 8L8 15"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="services__box">
+          <ul class="services__list services__grid-container">
+            <li class="services__item services__grid-container-1">
+              <img
+                src="./assets/services/images/1img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-1.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Инструментальная диагностика</p>
+            </li>
+            <li class="services__item services__grid-container-2">
+              <img
+                src="./assets/services/images/2img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-2.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Лабораторные исследования</p>
+            </li>
+            <li class="services__item services__grid-container-3">
+              <img
+                src="./assets/services/images/3img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-3.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Хирургия</p>
+            </li>
+            <li
+              class="services__item services__item--green services__grid-container-4"
+            >
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-4.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Терапия и профилактика</p>
+            </li>
+            <li
+              class="services__item services__grid-container-5 visible-mobile"
+            >
+              <img
+                src="./assets/services/images/5img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-5.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Переливание крови</p>
+            </li>
+            <li
+              class="services__item services__grid-container-6 visible-mobile"
+            >
+              <img
+                src="./assets/services/images/6img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-6.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Реанимация и стационар</p>
+            </li>
+            <li
+              class="services__item services__grid-container-7 visible-mobile"
+            >
+              <img
+                src="./assets/services/images/6img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-7.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Прием врача узкой специализации</p>
+            </li>
+            <li
+              class="services__item services__grid-container-8 visible-mobile"
+            >
+              <img
+                src="./assets/services/images/8img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-8.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Гигиена</p>
+            </li>
+            <li
+              class="services__item services__grid-container-9 visible-mobile"
+            >
+              <img
+                src="./assets/services/images/9img.webp"
+                alt="background-image"
+                class="services__item--background-image service__card--background-image"
+                loading="lazy"
+              />
+
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-9.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Стоматология</p>
+            </li>
+            <li
+              class="services__item services__item--green services__grid-container-10 visible-mobile"
+            >
+              <div class="services__item--icons">
+                <img
+                  src="./assets/services/icons/icon-10.svg"
+                  alt="image-icon"
+                  class="services__item--icon-image service__card--icon-image"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8H15M15 8L8 1M15 8L8 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Эвтаназия</p>
+            </li>
+          </ul>
+          <button class="button services__box--button">
+            <img
+              src="./assets/icons/paws 1.svg"
+              alt="icon"
+              class="visible-mobile"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            Все услуги
+          </button>
+        </div>
+      </section>
+
+      <section class="specialists" id="specialists">
+        <header class="specialists_header section-header">
+          <button class="specialists__header--button button--decoration">
+            Специалисты
+          </button>
+          <div class="specialists__header--description">
+            <h2>
+              Каждый из наших врачей<br />
+              <span class="italic">имеет опыт работы</span><br />
+              не менее 7 лет
+            </h2>
+          </div>
+        </header>
+        <ul class="specialists__list">
+          <li class="specialists__item small-card">
+            <img
+              src="./assets/specialists/img1.webp"
+              alt="background-image"
+              class="specialists__item--background-image small-card--background-image"
+              loading="lazy"
+            />
+            <h3>Ласточкина Татьяна Евгеньевна</h3>
+            <p class="text-2">Терапевт, хирург, стоматолог</p>
+          </li>
+          <li class="specialists__item small-card">
+            <img
+              src="./assets/specialists/img2.webp"
+              alt="background-image"
+              class="specialists__item--background-image small-card--background-image"
+              loading="lazy"
+            />
+            <h3>Журавлев Игорь Николаевич</h3>
+            <p class="text-2">Терапевт, хирург, стоматолог</p>
+          </li>
+          <li class="specialists__item small-card">
+            <img
+              src="./assets/specialists/img3.webp"
+              alt="background-image"
+              class="specialists__item--background-image small-card--background-image"
+              loading="lazy"
+            />
+            <h3>Рябова Ирина Владимировна</h3>
+            <p class="text-2">Терапевт, хирург, стоматолог</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="appointment-form form" id="form">
+        <img
+          src="./assets/appointment/img.jpg"
+          alt="background-image "
+          class="form__background-image hidden-mobile"
+          loading="lazy"
+        />
+        <div class="appointment-form__block form__block">
+          <div
+            class="form__block--description appointment-form__block--description"
+          >
+            <h2>
+              Запишитесь на прием <span class="italic">прямо сейчас!</span>
+            </h2>
+            <p>
+              Не откладывайте профилактику и лечение заболеваний питомца,
+              оставьте заявку и наш менеджер свяжется с вами
+            </p>
+          </div>
+          <form
+            action=""
+            method="post"
+            class="form__block--form appointment-form__block--form"
+          >
+            <label>
+              <input
+                class="appointment-form__block--input form__block--input"
+                type="text"
+                placeholder="Ваше Имя"
+            /></label>
+            <label>
+              <input
+                class="appointment-form__block--input form__block--input"
+                type="tel"
+                placeholder="Телефон"
+            /></label>
+            <button
+              class="button button--send appointment-form__button"
+              type="submit"
+            >
+              Отправить
+            </button>
+            <div class="caption form__list--caption">
+              <p class="caption form__block--caption">
+                *Нажимая на кнопку, вы соглашаетесь с
+              </p>
+              <a href="#" class="caption form__block--caption"
+                >политикой конфиденциальности.</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__block">
+        <div class="footer__description">
+          <a href="" class="footer__image">
+            <img
+              src="./assets/footer-logo.png"
+              alt="logo"
+              class="footer__image--item"
+              width="140"
+              height="120"
+              loading="lazy"
+            />
+          </a>
+          <div class="footer__footer">
+            <div class="footer__footer--address">
+              <ul class="footer__footer--list">
+                <li class="footer__footer--item">
+                  <a
+                    href="https://yandex.ru/maps/?text=Подольск, ул. Чайковского, 48А"
+                    class="text-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Подольск,ул. Чайковского, 48А</a
+                  >
+                </li>
+                <li class="footer__footer--item">
+                  <a href="tel:+74956783222" class="text-2"
+                    >+7 (956) 6796 43 66</a
+                  >
+                </li>
+              </ul>
+              <p class="caption">Круглосуточно</p>
+            </div>
+            <ul class="footer__caption--list">
+              <li>
+                <a href="#" class="footer__caption--item caption"
+                  >Договор оферты</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__caption--item caption"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__caption--item caption"
+                  >Доктор Тома</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab523bb69ec1632238c5ab599050d72f235791ce009d59c5172f2964267e39f57&amp;source=constructor"
+          width="550"
+          height="550"
+          frameborder="0"
+          title="map where is Doctor Toma"
+        ></iframe>
+      </div>
+    </footer>
+
+    <dialog class="overlay" id="overlay">
+      <form class="overlay__close-button-wrapper" method="dialog">
+        <a href="#" class="overlay__image visible-mobile">
+          <img
+            src="./assets/icons/overlay-icon.svg"
+            alt="logo"
+            width="43"
+            height="34"
+            loading="lazy"
+          />
+        </a>
+        <button class="overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="overlay__body">
+        <div class="overlay-menu__body">
+          <ul class="overlay-menu__list">
+            <li class="overlay-menu__item">
+              <a
+                href="#about"
+                class="overlay-menu__link"
+                onclick="overlay.close()"
+                >О клинике</a
+              >
+            </li>
+            <li class="overlay-menu__item">
+              <a
+                href="#specialists"
+                class="overlay-menu__link"
+                onclick="overlay.close()"
+                >Врачи</a
+              >
+            </li>
+            <li class="overlay-menu__item">
+              <a
+                href="#services"
+                class="overlay-menu__link"
+                onclick="overlay.close()"
+                >Услуги</a
+              >
+            </li>
+            <li class="overlay-menu__item">
+              <a href="" class="overlay-menu__link" onclick="overlay.close()"
+                >База знаний</a
+              >
+            </li>
+            <li class="overlay-menu__item">
+              <a
+                href="#footer"
+                class="overlay-menu__link"
+                onclick="overlay.close()"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+          <button class="overlay__button button--decoration">
+            Мы на связи
+          </button>
+          <div class="overlay-info__body">
+            <ul class="overlay-info__list">
+              <li class="overlay-info__item">
+                <a href="tel:+74956783222" class="overlay-info__link"
+                  >+7 495 678 32 22</a
+                >
+              </li>
+              <li class="overlay-info__item">
+                <a
+                  href="https://yandex.ru/maps/?text=Подольск, ул. Чайковского, 48А"
+                  class="overlay-info__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Подольск, ул.Чайковского, 48А</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="overlay__info">
+            <p>Круглосуточно</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
