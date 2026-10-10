@@ -1,0 +1,115 @@
+.button {
+  @include reset-button;
+  @include flex-center;
+  @include fluid-text(18, 12);
+
+  height: var(--button-height);
+  border: var(--border-transparent);
+  border-radius: var(--border-radius);
+  background-color: var(--color-green);
+  color: var(--color-light);
+  padding: 18px 61px;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 10px;
+
+  @include tablet {
+    padding: 19px 73.5px;
+  }
+
+  @include mobile {
+    padding: 17px 21.5px;
+  }
+
+  &:hover {
+    background-color: var(--color-accent);
+  }
+
+  &:active {
+    background-color: var(--color-green-alt);
+  }
+
+  &--decoration {
+    @include reset-button;
+    @include flex-center(true);
+    @include fluid-text(18, 10);
+
+    height: 33px;
+    font-weight: 400;
+    color: var(--color-light);
+    background-color: transparent;
+    border: 1px solid var(--color-light);
+    border-radius: 50px;
+    padding-inline: 20px;
+    cursor: default;
+    text-align: center;
+
+    @include mobile {
+      height: 20px;
+    }
+  }
+
+  &--slider {
+    --squareButtonValue: 46px;
+    @include square(var(--squareButtonValue));
+    @include flex-center;
+
+    border-radius: 50%;
+    background-color: var(--color-green-alt);
+    border: var(--border-transparent);
+    color: var(--color-light);
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+
+    &:active {
+      color: var(--color-accent);
+      background-color: var(--color-light);
+    }
+
+    @include mobile {
+      --squareButtonValue: 24px;
+    }
+  }
+
+  &-no-active {
+    background-color: var(--color-green-alt-50);
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--color-green-alt-50);
+    }
+
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &--send {
+    background-color: var(--color-accent);
+    padding-inline: 119px;
+    padding-block: 38px;
+
+    &:hover {
+      background-color: var(--color-green);
+    }
+
+    &:active {
+      background-color: var(--color-light);
+      color: var(--color-accent);
+    }
+
+    @include tablet {
+      height: 48px;
+      padding: 16px 143px;
+    }
+
+    @include mobile {
+      height: 50px;
+      width: 300px;
+      padding: 17px 114px;
+    }
+  }
+}
