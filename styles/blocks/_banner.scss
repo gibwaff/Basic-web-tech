@@ -1,0 +1,81 @@
+.banner {
+  height: 810px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  background: var(--color-linear-gradient);
+  margin-block: -30px;
+
+  @include tablet {
+    height: 652px;
+  }
+
+  @include mobile {
+    height: 585px;
+    align-items: start;
+    padding-top: 100px;
+    background: var(--color-radial-gradient);
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    max-height: 883px;
+    display: flex;
+    align-self: center;
+
+    @include tablet {
+      max-height: 846px;
+    }
+
+    @include mobile {
+      max-height: 400px;
+      align-self: flex-end;
+      max-width: 80vw;
+    }
+  }
+
+  &__list {
+    max-width: 827px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding-bottom: 90px;
+    position: relative;
+
+    @include tablet {
+      padding-bottom: 80px;
+      max-width: 740px;
+    }
+
+    @include mobile {
+      gap: 20px;
+      max-width: 300px;
+    }
+  }
+
+  &__description {
+    @include desktop {
+      padding-inline: 153px;
+    }
+
+    @include tablet {
+      padding-inline: 175px;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+}

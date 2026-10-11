@@ -1,0 +1,80 @@
+.header {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-radius: 0 0 30px 30px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  width: 100vw;
+
+  @include desktop {
+    height: 94px;
+  }
+
+  @include mobile {
+    height: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 20px 30px;
+
+    @include desktop {
+      padding: 0 80px 20px;
+    }
+
+    @include mobile {
+      padding: 0 20px 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: flex-end;
+
+    @include desktop-above {
+      margin-bottom: -18px;
+    }
+
+    @include desktop {
+      margin-top: -5px;
+    }
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__caption p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &:active {
+      color: var(--color-green-alt);
+    }
+
+    &.caption {
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
+}
