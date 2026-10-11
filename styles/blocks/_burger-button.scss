@@ -1,0 +1,34 @@
+.burger-button {
+  @include reset-button;
+  @include square(48px);
+
+  position: relative;
+  display: inline-flex;
+  height: 14px;
+
+  &:hover {
+    &::after {
+      box-shadow: 0 -5px var(--color-accent), 0 5px var(--color-accent);
+      background-color: var(--color-accent);
+      transition-duration: var(--transition-duration);
+    }
+  }
+
+  &:active {
+    &::after {
+      box-shadow: 0 -5px var(--color-green-alt), 0 5px var(--color-green-alt);
+      background-color: var(--color-green-alt);
+    }
+  }
+
+  &::after {
+    @include abs-center;
+
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-dark);
+    border-radius: 5px;
+    box-shadow: 0 -5px, 0 5px;
+  }
+}
