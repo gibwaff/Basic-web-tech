@@ -1,0 +1,63 @@
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  aspect-ratio: 1.7;
+  position: relative;
+
+  @include tablet {
+    aspect-ratio: 1.4;
+  }
+
+  @include mobile {
+    width: 94vw;
+    aspect-ratio: 1.7;
+  }
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0 20px;
+
+    @include mobile {
+      padding: 20px 10px 0;
+    }
+  }
+
+  & h3,
+  & button,
+  & p {
+    position: relative;
+    z-index: 100;
+  }
+
+  & h3 {
+    margin: 0;
+  }
+
+  & p {
+    max-width: 367px;
+    padding: 20px;
+
+    @include mobile {
+      padding: 0 50px 20px 10px;
+      max-width: 240px;
+    }
+  }
+
+  &--background-image {
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-large);
+
+    @include mobile {
+      border-radius: 10px;
+    }
+  }
+}

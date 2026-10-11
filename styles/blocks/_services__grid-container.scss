@@ -1,0 +1,52 @@
+.services__grid-container {
+  &-1 {
+    @include mobile {
+      order: 1;
+    }
+  }
+  &-2 {
+    @include mobile {
+      order: 6;
+    }
+  }
+  &-3 {
+    @include mobile {
+      order: 7;
+    }
+  }
+  &-4 {
+    @include mobile {
+      order: 2;
+    }
+  }
+  &-5 {
+    @include mobile {
+      order: 3;
+    }
+  }
+  &-6 {
+    @include mobile {
+      order: 8;
+    }
+  }
+  &-7 {
+    @include mobile {
+      order: 4;
+    }
+  }
+  &-8 {
+    @include mobile {
+      order: 9;
+    }
+  }
+  &-9 {
+    @include mobile {
+      order: 5;
+    }
+  }
+  &-10 {
+    @include mobile {
+      order: 10;
+    }
+  }
+}

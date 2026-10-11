@@ -1,0 +1,49 @@
+.grid-container {
+  &-1 {
+    @include mobile {
+      order: 2;
+    }
+  }
+
+  &-2 {
+    grid-column: span 2;
+
+    @include mobile {
+      grid-column: span 1;
+      order: 3;
+    }
+  }
+
+  &-3 {
+    @include mobile {
+      order: 4;
+    }
+  }
+
+  &-4 {
+    @include mobile {
+      order: 1;
+    }
+  }
+
+  &-5 {
+    @include mobile {
+      order: 6;
+    }
+  }
+
+  &-6 {
+    grid-column: span 2;
+
+    @include mobile {
+      grid-column: span 1;
+      order: 5;
+    }
+  }
+
+  &-7 {
+    @include mobile {
+      order: 7;
+    }
+  }
+}

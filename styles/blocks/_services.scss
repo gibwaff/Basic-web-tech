@@ -1,0 +1,233 @@
+.services {
+  padding-top: 120px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @include tablet {
+    padding-top: 100px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  @include mobile {
+    background-color: var(--color-green);
+    margin-top: -15px;
+    padding-top: 71px;
+    padding-inline: 10px;
+  }
+
+  &__header {
+    text-align: start;
+    margin: 0;
+
+    & button {
+      margin-right: 80px;
+
+      @include mobile {
+        margin: 0;
+      }
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+
+    @include tablet {
+      width: 72vw;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &--button {
+      width: 28vw;
+      aspect-ratio: 0.15;
+      align-self: center;
+      background-color: var(--color-accent);
+
+      &:hover {
+        background-color: var(--color-green-alt);
+      }
+
+      &:active {
+        color: var(--color-accent);
+        background-color: var(--color-light);
+      }
+
+      @include tablet {
+        width: 34vw;
+        aspect-ratio: 0.2;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    gap: 10px;
+    grid-auto-rows: auto;
+    align-items: stretch;
+    margin-right: -15px;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+      margin-right: -10px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    --sizeForSquare: 23vw;
+    @include square(var(--sizeForSquare));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 40px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--color-accent);
+      cursor: pointer;
+
+      .services__item--background-image {
+        opacity: 0;
+      }
+
+      .services__item--icons svg {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: var(--color-green-alt);
+      cursor: grab;
+
+      .services__item--background-image {
+        opacity: 0;
+      }
+
+      .services__item--icons svg {
+        opacity: 1;
+      }
+    }
+
+    @include tablet {
+      border-radius: var(--border-radius-large);
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    @include mobile {
+      --sizeForSquare: 47vw;
+      padding: 12px 15px 20px;
+      border-radius: 15px;
+    }
+
+    &--background-image {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 40px;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+
+      @include tablet {
+        border-radius: var(--border-radius-large);
+      }
+
+      @include mobile {
+        border-radius: 15px;
+      }
+    }
+
+    &--icons {
+      display: flex;
+      justify-content: space-between;
+
+      & svg {
+        align-self: center;
+        opacity: 0;
+        transition-duration: opacity 0.2s ease;
+
+        @include mobile {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    &--icon-image {
+      --sizeForIcon: 55px;
+      @include square(var(--sizeForIcon));
+
+      position: relative;
+      z-index: 100;
+
+      @include tablet {
+        --sizeForIcon: 35px;
+      }
+
+      @include mobile {
+        --sizeForIcon: 30px;
+      }
+    }
+
+    & p {
+      position: relative;
+      z-index: 100;
+
+      @include tablet {
+        color: var(--color-light-alt);
+      }
+
+      @include tablet {
+        max-width: 80px;
+      }
+    }
+
+    &--green {
+      background-color: var(--color-green-alt);
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        display: flex;
+        border-radius: 10px;
+      }
+    }
+  }
+}
