@@ -1,0 +1,9 @@
+@import "./normalize", "./fonts", "./mixins", "./media", "./variables",
+  "./globals", "./utils";
+@import "./blocks/button", "./blocks/burger-button", "./blocks/cross-button",
+  "./blocks/header", "./blocks/overlay", "./blocks/banner", "./blocks/stocks",
+  "./blocks/section-header", "./blocks/small-card", "./blocks/big-card",
+  "./blocks/grid-container", "./blocks/about", "./blocks/form",
+  "./blocks/services", "./blocks/specialists",
+  "./blocks/services__grid-container", "./blocks/appointment-form",
+  "./blocks/footer";
