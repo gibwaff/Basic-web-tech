@@ -1,0 +1,139 @@
+.footer {
+  margin-top: -20px;
+  padding-top: 140px;
+  background-color: var(--color-green);
+  padding-inline: 20px;
+  padding-bottom: 100px;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 72vw;
+    padding-inline: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  &__block {
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    gap: 75px;
+    justify-content: flex-end;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    & iframe {
+      width: 45vw;
+      aspect-ratio: 1;
+      border-radius: 10px;
+
+      @include tablet {
+        order: -1;
+        width: 90%;
+        height: 400px;
+        padding-block: 23px;
+      }
+
+      @include mobile {
+        padding-block: 36px;
+        border-radius: 10px;
+        height: auto;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-block: 40px;
+
+    @include tablet {
+      display: contents;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding-right: 80px;
+
+    @include tablet {
+      display: contents;
+      align-items: center;
+      text-align: center;
+      padding-right: 0;
+    }
+
+    &--address {
+      & p {
+        margin-top: -10px;
+
+        @include tablet {
+          margin-top: -5px;
+        }
+      }
+
+      @include tablet {
+        order: -2;
+      }
+    }
+
+    &--list {
+      gap: 5px;
+
+      & a {
+        margin: 0;
+        color: var(--color-dark);
+
+        &:hover {
+          color: var(--color-accent);
+        }
+
+        &:active {
+          color: var(--color-green);
+        }
+      }
+    }
+  }
+
+  &__caption--list {
+    border-top: 1px solid var(--color-dark-50);
+    padding-top: 30px;
+    display: flex;
+    gap: 60px;
+
+    @include tablet {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 24px 24px 40px;
+    }
+
+    @include mobile {
+      padding: 24px 10.5px 36px;
+    }
+  }
+
+  &__image {
+    @include tablet {
+      @include square(100px);
+      order: -3;
+      padding-block: 40px;
+    }
+
+    @include mobile {
+      @include square(70px);
+    }
+  }
+}
